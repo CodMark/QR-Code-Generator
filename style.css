@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans%3A300%2C400%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.qrcode-fram{
+    width: 25rem;
+    height: 32rem;
+    border-radius: 23px;
+    background: #eee;
+    box-shadow: 0px 0px 20px #0000002e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.qrcode-fram p{
+    position: absolute;
+    top: 37px;
+    font-size: larger;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #000000bd;
+    text-shadow: 14px 5px 10px #00000029;
+}
+.qrcode-fram .qrcodeimg-frem{
+    position: absolute;
+    top: 5.4rem;
+    width: 17rem;
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #ff003b, #a851fe);
+    border-radius: 9px;
+    box-shadow: 5px 7px 20px #de4ea38c;
+}
+.qrcode-fram .qrcodeimg-frem .qrcode-img{
+    width: 16rem;
+    height: 16rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    padding: 12px;
+}
+.qrcode-fram .qrcodeimg-frem .qrcode-img img{
+    width: 100%;
+    height: 100%;
+}
+.qrcode-fram h2{
+    position: absolute;
+    bottom: 5.4rem;
+    color: #1c1c1c;
+    text-shadow: 14px 5px 10px #00000052;
+}
+.qrcode-fram .input-text{
+    position: absolute;
+    bottom: 2.3rem;
+    width: 20.4rem;
+    height: 2.3rem;
+    background: linear-gradient(45deg, #ff003b, #a851fe);
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 7px 20px #de4ea38c;
+}
+.qrcode-fram .input-text input{
+    width: 20rem;
+    height: 1.9rem;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    background: white;
+    padding-left: 12px;
+    font-size: larger;
+    color: #1c1c1c;
+}

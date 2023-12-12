@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRCode Generator - codeweb4u</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="qrcode-fram">
+        <p>QRCode Generator</p>
+        <div class="qrcodeimg-frem">
+            <div class="qrcode-img">
+                <div id="qrcode"></div>
+            </div>
+        </div>
+        <h2>Enter The Text</h2>
+        <div class="input-text">
+            <input type="text" name="qrcode" id="text" value="Subscribe Now">
+        </div>
+    </div>
+</body>
+<script src="./qrcode.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    var elem = document.getElementById("qrcode");
+    var qrcode = new QRCode(elem, {
+        width: 250,
+        height: 250
+    });
+
+    function makeCode() {
+        var elText = document.getElementById("text");
+        qrcode.makeCode(elText.value);
+    }
+    makeCode();
+
+    document.getElementById("text").onkeyup = function (e) {
+        makeCode();
+    }
+</script>
+</html>
